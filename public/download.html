@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Download — DropLink</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>DropLink</h1>
+    </header>
+
+    <div id="fileCard" class="file-card hidden">
+      <div class="file-icon">📄</div>
+      <h2 id="fileName">—</h2>
+      <p id="fileMeta" class="file-meta"></p>
+      <a id="downloadBtn" class="download-btn" href="#">Download file</a>
+      <p id="expiryNote" class="expiry-note"></p>
+    </div>
+
+    <div id="errorCard" class="file-card hidden">
+      <div class="file-icon">⚠️</div>
+      <h2 id="errorText">This link is invalid or has expired.</h2>
+      <a href="/" class="download-btn secondary-link">Upload your own file</a>
+    </div>
+  </div>
+
+  <script src="/download.js"></script>
+</body>
+</html>
